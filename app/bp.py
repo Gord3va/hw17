@@ -111,3 +111,6 @@ class GenreView(Resource):
             return {}, 404
 
         return genre_schema.dump(genre), 200
+
+
+

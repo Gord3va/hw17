@@ -14,5 +14,5 @@ def create_app():
     with app.app_context():
         api = Api(app)
         app.config['api'] = api
-
+        from app import bp
         return app
